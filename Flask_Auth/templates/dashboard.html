@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div class="container">
+        <h1>Welcome {{username}}! </h1>
+        <p>Welcome to the dashboard</p>
+        <a class="btn btn-login" href="{{ url_for('logout') }}">Logout</a>
+    </div>
+
+{% endblock %}
